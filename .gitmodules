@@ -1,0 +1,7 @@
+[submodule "mondo/knative-docs"]
+	path = mondo/knative-docs
+	url = https://github.com/knative/docs.git
+[submodule "workload/DeathStarBench"]
+	path = workload/DeathStarBench
+	url = git@github.com:uwm-cs736/DeathStarBench.git
+	branch = master

@@ -1,0 +1,124 @@
+Allocatable
+NAME      CapCPU    CapMem        AllocatableCPU    AllocatableMem
+node-0   32        131721480Ki   31800m            131094792Ki
+node-1   32        131721504Ki   31800m            131094816Ki
+node-2   32        131721504Ki   31900m            131356960Ki
+
+Usage
+NAME     CPU(cores)   CPU%   MEMORY(bytes)   MEMORY%   
+node-0   366m         1%     3970Mi          3%        
+node-1   654m         2%     5742Mi          4%        
+node-2   533m         1%     4741Mi          3%        
+
+Default Allocated
+NAME                                                CPU_REQUEST    MEMORY_REQUEST
+consul-9896c54ff-7rhqj                             100m           <none>
+jaeger-5f87fd56c-j9dxx                             100m           <none>
+memcached-profile-c4fb4d44f-t7ppw                  100m           <none>
+memcached-rate-5d657cb4b7-r25cc                    100m           <none>
+memcached-reserve-6d846fbdf-zwqjt                  100m           <none>
+mongodb-geo-7d57dc764-b4nh2                        100m           <none>
+mongodb-profile-564d9ff5cd-csb8p                   100m           <none>
+mongodb-rate-5d85b8854f-f2zp2                      100m           <none>
+mongodb-recommendation-95d56f97d-6xhhm             100m           <none>
+mongodb-reservation-6679d4c6b4-xkx5l               100m           <none>
+mongodb-user-5f7f5df5f8-t8zk7                      100m           <none>
+nettool-7cf5bccf96-mhkl5                           <none>         <none>
+nfs-subdir-external-provisioner-858b648fb8-28drm   <none>         <none>
+wrk-886f9bf68-b8p7s                                <none>         <none>
+
+
+Colocation Allocated
+NAME    CPU_REQUEST    MEMORY_REQUEST
+
+
+Pending Pods
+No resources found
+
+=== 1-serverless ===
+
+deployment.apps/consul configured
+service/consul configured
+deployment.apps/frontend created
+configmap/frontend-config unchanged
+service/frontend configured
+persistentvolume/geo-pv unchanged
+persistentvolumeclaim/geo-pvc unchanged
+deployment.apps/jaeger configured
+service/jaeger configured
+deployment.apps/memcached-profile configured
+service/memcached-profile configured
+deployment.apps/memcached-rate configured
+service/memcached-rate configured
+deployment.apps/memcached-reserve configured
+service/memcached-reserve configured
+deployment.apps/mongodb-geo configured
+service/mongodb-geo configured
+deployment.apps/mongodb-profile configured
+service/mongodb-profile configured
+deployment.apps/mongodb-rate configured
+service/mongodb-rate configured
+deployment.apps/mongodb-recommendation configured
+service/mongodb-recommendation configured
+deployment.apps/mongodb-reservation configured
+service/mongodb-reservation configured
+deployment.apps/mongodb-user configured
+service/mongodb-user configured
+persistentvolume/profile-pv unchanged
+persistentvolumeclaim/profile-pvc unchanged
+persistentvolume/rate-pv unchanged
+persistentvolumeclaim/rate-pvc unchanged
+persistentvolume/recommendation-pv unchanged
+persistentvolumeclaim/recommendation-pvc unchanged
+persistentvolume/reservation-pv unchanged
+persistentvolumeclaim/reservation-pvc unchanged
+Warning: Kubernetes default value is insecure, Knative may default this to secure in a future release: spec.template.spec.containers[0].securityContext.allowPrivilegeEscalation, spec.template.spec.containers[0].securityContext.capabilities, spec.template.spec.containers[0].securityContext.runAsNonRoot, spec.template.spec.containers[0].securityContext.seccompProfile
+service.serving.knative.dev/srv-geo configured
+service.serving.knative.dev/srv-profile configured
+service.serving.knative.dev/srv-rate configured
+service.serving.knative.dev/srv-recommendation configured
+service.serving.knative.dev/srv-reservation configured
+service.serving.knative.dev/srv-search configured
+service.serving.knative.dev/srv-user configured
+persistentvolume/user-pv unchanged
+persistentvolumeclaim/user-pvc unchanged
+
+=== 1-serverless end ===
+
+Allocatable
+NAME      CapCPU    CapMem        AllocatableCPU    AllocatableMem
+node-0   32        131721480Ki   31800m            131094792Ki
+node-1   32        131721504Ki   31800m            131094816Ki
+node-2   32        131721504Ki   31900m            131356960Ki
+
+Usage
+NAME     CPU(cores)   CPU%   MEMORY(bytes)   MEMORY%   
+node-0   407m         1%     4062Mi          3%        
+node-1   671m         2%     5782Mi          4%        
+node-2   584m         1%     4742Mi          3%        
+
+Default Allocated
+NAME                                                CPU_REQUEST    MEMORY_REQUEST
+consul-9896c54ff-7rhqj                             100m           <none>
+frontend-5dc7d676f5-kqxhk                          100m           <none>
+jaeger-5f87fd56c-j9dxx                             100m           <none>
+memcached-profile-c4fb4d44f-t7ppw                  100m           <none>
+memcached-rate-5d657cb4b7-r25cc                    100m           <none>
+memcached-reserve-6d846fbdf-zwqjt                  100m           <none>
+mongodb-geo-7d57dc764-b4nh2                        100m           <none>
+mongodb-profile-564d9ff5cd-csb8p                   100m           <none>
+mongodb-rate-5d85b8854f-f2zp2                      100m           <none>
+mongodb-recommendation-95d56f97d-6xhhm             100m           <none>
+mongodb-reservation-6679d4c6b4-xkx5l               100m           <none>
+mongodb-user-5f7f5df5f8-t8zk7                      100m           <none>
+nettool-7cf5bccf96-mhkl5                           <none>         <none>
+nfs-subdir-external-provisioner-858b648fb8-28drm   <none>         <none>
+wrk-886f9bf68-b8p7s                                <none>         <none>
+
+
+Colocation Allocated
+NAME    CPU_REQUEST    MEMORY_REQUEST
+
+
+Pending Pods
+No resources found

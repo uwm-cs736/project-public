@@ -1,0 +1,34 @@
+#!/usr/bin/env bash
+pushd cluster >/dev/null 2>&1
+pwd
+case $1 in
+	"init")
+		terraform init
+		;;
+  "re")
+    terraform refresh
+		;;
+	"del")
+		terraform destroy
+		;;
+	"a")
+		terraform apply
+		;;
+	"aa")
+		terraform apply -auto-approve
+		;;
+	"f")
+		terraform fmt -recursive
+		;;
+	"cc")
+    # only call this on host
+		kind create cluster --config=./cluster-config.yml
+		;;
+	"token")
+		 kubectl get secret kubernetes-dashboard-admin -n kubernetes-dashboard -o jsonpath={".data.token"} | base64 -d
+		;;
+	*)
+		echo "Unknown command $1"
+		;;
+esac
+popd >/dev/null 2>&1

@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nettool
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: nettool
+  template:
+    metadata:
+      labels:
+        app: nettool
+    spec:
+      containers:
+        - name: nettool
+          image: travelping/nettools
+          command: ["sleep"]
+          args: ["infinity"]

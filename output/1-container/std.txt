@@ -1,0 +1,125 @@
+Allocatable
+NAME      CapCPU    CapMem        AllocatableCPU    AllocatableMem
+node-0   32        131721480Ki   31800m            131094792Ki
+node-1   32        131721504Ki   31800m            131094816Ki
+node-2   32        131721504Ki   31900m            131356960Ki
+
+Usage
+NAME     CPU(cores)   CPU%   MEMORY(bytes)   MEMORY%   
+node-0   939m         2%     4032Mi          3%        
+node-1   1855m        5%     5605Mi          4%        
+node-2   1367m        4%     4627Mi          3%        
+
+Default Allocated
+NAME                                                CPU_REQUEST    MEMORY_REQUEST
+nettool-7cf5bccf96-mhkl5                           <none>         <none>
+nfs-subdir-external-provisioner-858b648fb8-28drm   <none>         <none>
+wrk-886f9bf68-b8p7s                                <none>         <none>
+
+
+Colocation Allocated
+NAME    CPU_REQUEST    MEMORY_REQUEST
+
+
+Pending Pods
+No resources found
+
+=== 1-container ===
+
+deployment.apps/consul created
+service/consul created
+deployment.apps/frontend created
+service/frontend created
+deployment.apps/geo created
+persistentvolume/geo-pv created
+persistentvolumeclaim/geo-pvc created
+service/geo created
+deployment.apps/mongodb-geo created
+service/mongodb-geo created
+deployment.apps/jaeger created
+service/jaeger created
+deployment.apps/memcached-profile created
+service/memcached-profile created
+deployment.apps/mongodb-profile created
+service/mongodb-profile created
+deployment.apps/profile created
+persistentvolume/profile-pv created
+persistentvolumeclaim/profile-pvc created
+service/profile created
+deployment.apps/memcached-rate created
+service/memcached-rate created
+deployment.apps/mongodb-rate created
+service/mongodb-rate created
+deployment.apps/rate created
+persistentvolume/rate-pv created
+persistentvolumeclaim/rate-pvc created
+service/rate created
+deployment.apps/mongodb-recommendation created
+service/mongodb-recommendation created
+deployment.apps/recommendation created
+persistentvolume/recommendation-pv created
+persistentvolumeclaim/recommendation-pvc created
+service/recommendation created
+deployment.apps/memcached-reserve created
+service/memcached-reserve created
+deployment.apps/mongodb-reservation created
+service/mongodb-reservation created
+deployment.apps/reservation created
+persistentvolume/reservation-pv created
+persistentvolumeclaim/reservation-pvc created
+service/reservation created
+deployment.apps/search created
+service/search created
+deployment.apps/mongodb-user created
+service/mongodb-user created
+deployment.apps/user created
+persistentvolume/user-pv created
+persistentvolumeclaim/user-pvc created
+service/user created
+
+=== 1-container end ===
+
+Allocatable
+NAME      CapCPU    CapMem        AllocatableCPU    AllocatableMem
+node-0   32        131721480Ki   31800m            131094792Ki
+node-1   32        131721504Ki   31800m            131094816Ki
+node-2   32        131721504Ki   31900m            131356960Ki
+
+Usage
+NAME     CPU(cores)   CPU%   MEMORY(bytes)   MEMORY%   
+node-0   532m         1%     4023Mi          3%        
+node-1   3394m        10%    6265Mi          4%        
+node-2   3451m        10%    5197Mi          4%        
+
+Default Allocated
+NAME                                                CPU_REQUEST    MEMORY_REQUEST
+consul-9896c54ff-dwv5g                             100m           <none>
+frontend-79cb58b4ff-dptkg                          100m           <none>
+geo-79f95787d5-vs8kj                               100m           <none>
+jaeger-5f87fd56c-zmpzs                             100m           <none>
+memcached-profile-c4fb4d44f-g95td                  100m           <none>
+memcached-rate-5d657cb4b7-cmrth                    100m           <none>
+memcached-reserve-6d846fbdf-j2sb9                  100m           <none>
+mongodb-geo-7d57dc764-szcwm                        100m           <none>
+mongodb-profile-564d9ff5cd-gkshm                   100m           <none>
+mongodb-rate-5d85b8854f-24g7x                      100m           <none>
+mongodb-recommendation-95d56f97d-7v7pc             100m           <none>
+mongodb-reservation-6679d4c6b4-nxssn               100m           <none>
+mongodb-user-5f7f5df5f8-qwxs9                      100m           <none>
+nettool-7cf5bccf96-mhkl5                           <none>         <none>
+nfs-subdir-external-provisioner-858b648fb8-28drm   <none>         <none>
+profile-786569bc59-jqkbk                           100m           <none>
+rate-55447466db-9cgff                              100m           <none>
+recommendation-8fb6dd4b9-bxl8m                     100m           <none>
+reservation-7f6db65455-9hml5                       100m           <none>
+search-65cf64dc98-x8fjw                            100m           <none>
+user-647fc48bf4-nb99c                              100m           <none>
+wrk-886f9bf68-b8p7s                                <none>         <none>
+
+
+Colocation Allocated
+NAME    CPU_REQUEST    MEMORY_REQUEST
+
+
+Pending Pods
+No resources found

@@ -1,0 +1,27 @@
+#!/usr/bin/env bash
+case $1 in
+	"init")
+		terraform init
+		;;
+  "re")
+    terraform refresh
+		;;
+	"a")
+		terraform apply
+		;;
+	"aa")
+		terraform apply -auto-approve
+		;;
+	"f")
+		terraform fmt -recursive
+		;;
+	"cc")
+		colima start
+		kind create cluster --config=./cluster-config.yml
+		kubectl cluster-info --context kind-kind
+		;;
+	*)
+		echo "Unknown command $1"
+		;;
+esac
+popd >/dev/null 2>&1

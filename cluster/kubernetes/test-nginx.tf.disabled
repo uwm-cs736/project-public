@@ -1,0 +1,66 @@
+resource "kubernetes_service_v1" "test-nginx" {
+  count = 0
+
+  metadata {
+    name = "test-nginx"
+  }
+
+  spec {
+    port {
+      port        = 10090
+      target_port = 80
+    }
+
+    selector = {
+      app = "test-nginx"
+    }
+
+    type = "LoadBalancer"
+  }
+
+}
+
+resource "kubernetes_deployment_v1" "test-nginx" {
+  count = 0
+
+  metadata {
+    name = "test-nginx"
+    labels = {
+      app = "test-nginx"
+    }
+  }
+
+  spec {
+    replicas = 1
+    selector {
+      match_labels = {
+        app = "test-nginx"
+      }
+    }
+
+    strategy {
+      type = "Recreate"
+    }
+
+    template {
+      metadata {
+        labels = {
+          app = "test-nginx"
+        }
+      }
+
+      spec {
+        container {
+          name  = "test-nginx"
+          image = "docker/getting-started"
+
+          port {
+            container_port = 80
+          }
+        }
+
+        restart_policy = "Always"
+      }
+    }
+  }
+}
