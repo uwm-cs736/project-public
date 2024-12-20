@@ -28,3 +28,10 @@
    2. `make node_pending`: output all pending node, wait until all nodes to be ready, then continuie.
    3. `make expr_test NAME=${name}`: run the workload generator.
    4. `make expr_stop NAME=${name}`: clean the application, return the cluster to original state.
+
+## Visit Dashboard and Grafana
+
+1. Run `./cluster/scripts/proxy-services.sh` to port forward services to localhost.
+2. Visit `http://localhost:3000` for kubernetes dashboard.
+3. Run `./ctf token` to get the token for kubernetes dashboard (remove the trailing % in the ouput if there is any).
+4. Visit `http://localhost:3001` for Grafana. The username is `admin`, and the password is `prom-operator`.
